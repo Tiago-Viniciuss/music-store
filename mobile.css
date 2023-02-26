@@ -50,7 +50,7 @@ header h1 {
 #menu.active {
     visibility: visible;
     height: 700px;
-    margin-top: 45px;
+    margin-top: 0px;
 }
 
 #menu a {
@@ -193,6 +193,14 @@ header h1 {
 
 #pedal p {
     margin: 0px 20px 20px 0px;
+}
+
+#contentlink {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 1100px;
+    background-color: black;
 }
 
 #festival {
