@@ -11,21 +11,17 @@ body {
 
 header {
     width: 100%;
-    height: 60px;
+    height: 80px;
     background-color: rgb(0, 0, 0);
     position: fixed;
     top: 0;
     z-index: 80;
 }
 
-header h1 {
-    margin: 0px;
-    
-}
 
 .backgroundheader {
     background-image: url(images/Brand.png);
-    background-size: calc(150px);
+    background-size: calc(190px);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -38,7 +34,7 @@ header h1 {
     background-color: transparent;
     border: none;
     color: white;
-    font-size: 2em;
+    font-size: 2.5em;
     z-index: 85;
     cursor: pointer;
 }
@@ -79,7 +75,7 @@ header h1 {
     background-image: url(images/guitar.png);
     margin-top: 40px;
     padding-bottom: 40px;
-    height: 500px;
+    height: 600px;
     display: flex;
     align-items: end;
     font-size: 0.9em;
@@ -125,13 +121,13 @@ header h1 {
     width: 100%;
     text-align: right;
     font-family: 'Alfa Slab One', cursive;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 #articlecall h2 {
     color: white;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.5em;
     padding: 15px 0px 0px 0px;
     
 }
@@ -145,7 +141,7 @@ header h1 {
 
 #backgroundpicture2 {
     background-image: url(images/womanguitar.png);
-    height: 300px;
+    height: 550px;
     margin: 0px;
     display: flex;
     align-items: end;
@@ -159,11 +155,11 @@ header h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 1150px;
+    height: 1650px;
 }
 
 #signatureguitars {
-    height: 350px;
+    height: 450px;
     background-image: url(images/guitars.png);
     margin: 10px;
     color: white;
@@ -181,7 +177,7 @@ header h1 {
 }
 
 #t-shirts {
-    height: 350px;
+    height: 550px;
     background-image: url(images/tshirts.png);
     margin: 10px;
     color: white;
@@ -199,7 +195,7 @@ header h1 {
 }
 
 #pedal {
-    height: 350px;
+    height: 550px;
     background-image: url(images/pedal.png);
     margin: 10px;
     color: white;
@@ -220,12 +216,12 @@ header h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 1100px;
+    height: 1900px;
     background-color: black;
 }
 
 #festival {
-    height: 350px;
+    height: 650px;
     background-image: url(images/festival.png);
     margin: 10px;
     color: rgb(0, 0, 0);
@@ -239,18 +235,18 @@ header h1 {
 }
 
 #festival h3 {
-    font-size: 1.1em;
+    font-size: 2.1em;
     margin: 0px 15px 5px 0px;
 }
 
 #festival p {
-    font-size: 0.8em;
+    font-size: 1em;
     margin: 0px 20px 20px 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #children {
-    height: 350px;
+    height: 650px;
     background-image: url(images/children.png);
     margin: 10px;
     color: rgb(0, 0, 0);
@@ -264,18 +260,18 @@ header h1 {
 }
 
 #children h3 {
-    font-size: 1.1em;
+    font-size: 2.1em;
     margin: 0px 15px 5px 0px;
 }
 
 #children p {
-    font-size: 0.8em;
+    font-size: 1em;
     margin: 0px 20px 20px 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #solo {
-    height: 350px;
+    height: 650px;
     background-image: url(images/solo.png);
     margin: 10px;
     color: rgb(1, 1, 1);
@@ -289,12 +285,12 @@ header h1 {
 }
 
 #solo h3 {
-    font-size: 1.1em;
+    font-size: 2.1em;
     margin: 0px 15px 5px 0px;
 }
 
 #solo p {
-    font-size: 0.8em;
+    font-size: 1em;
     margin: 0px 20px 20px 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -316,15 +312,15 @@ header h1 {
 */
 
 #JCarticle p {
-    padding: 15px;
+    padding: 25px;
     text-align: justify;
     text-indent: 30px;
 }
 
 #backgroundarticle {
     background-image: url(images/Jcharllote.png);
-    margin-top: 40px;
-    height: 500px;
+    margin-top: 60px;
+    height: 650px;
     display: flex;
     align-items: end;
     background-size: cover;
@@ -357,7 +353,7 @@ header h1 {
 }
 
 #electricinst {
-    height: 1600px;
+    height: 1300px;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
@@ -367,8 +363,8 @@ header h1 {
 }
 
 .electricclass {
-    width: 130px;
-    height: 300px;
+    width: 160px;
+    height: 400px;
     background-color: black;
     border: 1px solid rgb(6, 6, 6);
     display: flex;
@@ -431,7 +427,7 @@ header h1 {
 }
 
 #acousticinst {
-    height: 1600px;
+    height: 1300px;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
@@ -441,8 +437,8 @@ header h1 {
 }
 
 .acousticclass {
-    width: 130px;
-    height: 300px;
+    width: 160px;
+    height: 400px;
     background-color: black;
     border: 1px solid rgb(6, 6, 6);
     display: flex;
