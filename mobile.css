@@ -98,14 +98,6 @@ header h1 {
     display: none;
 }
 
-.init-hidden {
-    opacity: 0;
-    transition: opacity 0.5s linear;
-}
-
-.init-hidden-off {
-    opacity: 1;
-}
 
 #articlecall {
    padding-top: 45px;
