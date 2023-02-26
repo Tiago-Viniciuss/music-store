@@ -341,3 +341,50 @@ header h1 {
     background-size: cover;
     background-position: center;
 }
+
+/*
+    Electric Instruments Section
+*/
+
+#mainelectric h2 {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+#electricinst {
+    height: 1600px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.electricclass {
+    width: 130px;
+    height: 300px;
+    background-color: black;
+    border: 1px solid rgb(6, 6, 6);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-size: cover;
+    background-position: center;
+}
+
+.electricclass p  {
+    color: black;
+    background-color: white;
+    margin: 0px;
+    padding: 5px;
+    font-size: 0.7em;
+}
+
+#electric1 {
+   background-image: url(images/electricinst1.png);
+}
+
+#electric2 {
+    background-image: url(images/electricinst2.png); 
+}
