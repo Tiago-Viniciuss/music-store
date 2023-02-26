@@ -100,7 +100,7 @@ header h1 {
 
 .init-hidden {
     opacity: 0;
-    transition: opacity 1s linear;
+    transition: opacity 0.5s linear;
 }
 
 .init-hidden-off {
