@@ -49,17 +49,21 @@ header h1 {
 
 #menu.active {
     visibility: visible;
-    height: 700px;
+    height: 800px;
     margin-top: 0px;
 }
 
 #menu a {
     display: block;
     margin: 40px 20px;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: bold;
     text-decoration: none;
     color: black;
+}
+
+#menu a:hover {
+    text-decoration: underline;
 }
 
 
@@ -81,7 +85,7 @@ header h1 {
     color: white;
     font-size: 2em;
     margin: 0px 0px 20px 20px;
-    width: 200px;
+    width: 300px;
 }
 
 #instrumentspictures {
@@ -104,7 +108,6 @@ header h1 {
     background-color: rgb(0, 0, 0);
     transition: .5s;
 }
-
 
 
 #articlecall a {
@@ -143,6 +146,7 @@ header h1 {
     background-size: cover;
     background-position: center;
 }
+
 
 #shoplink {
     display: flex;
@@ -405,3 +409,134 @@ header h1 {
  #electric8 {
      background-image: url(images/electricinst8.png); 
  }
+
+ /*
+    Acoustic Instruments Section
+ */
+
+
+ #mainacoustic h2 {
+    margin: 70px 0px 50px 30px;
+    letter-spacing: 6px;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+#acousticinst {
+    height: 1600px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.acousticclass {
+    width: 130px;
+    height: 300px;
+    background-color: black;
+    border: 1px solid rgb(6, 6, 6);
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    background-size: cover;
+    background-position: center;
+}
+
+.acousticclass p  {
+    color: black;
+    background-color: white;
+    margin: 0px;
+    padding: 5px;
+    font-size: 0.7em;
+}
+
+#acoustic1 {
+   background-image: url(images/acoustic1.png);
+}
+
+#acoustic2 {
+    background-image: url(images/acoustic2.png); 
+}
+
+#acoustic3 {
+    background-image: url(images/acoustic3.png); 
+}
+
+#acoustic4 {
+    background-image: url(images/acoustic4.png); 
+}
+
+#acoustic5 {
+    background-image: url(images/acoustic5.png);
+ }
+ 
+ #acoustic6 {
+     background-image: url(images/acoustic6.png); 
+ }
+ 
+ #acoustic7 {
+     background-image: url(images/acoustic7.png); 
+ }
+ 
+ #acoustic8 {
+     background-image: url(images/acoustic8.png); 
+ }
+
+
+ /*
+    Drumm Sections
+ */
+
+ #maindrumm h2 {
+    margin: 70px 0px 50px 30px;
+    letter-spacing: 6px;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+#drumminst {
+    height: 1600px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.drummclass {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    border: 1px solid rgb(6, 6, 6);
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    background-size: cover;
+    background-position: center;
+}
+
+.drummclass p  {
+    color: black;
+    background-color: white;
+    margin: 0px;
+    padding: 15px;
+    font-size: 0.7em;
+    width: 100%;
+}
+
+#drumm1 {
+   background-image: url(images/drumm1.png);
+}
+
+#drumm2 {
+    background-image: url(images/drumm2.png); 
+}
+
+#drumm3 {
+    background-image: url(images/drumm3.png); 
+}
+
+#drumm4 {
+    background-image: url(images/drumm4.png); 
+}
