@@ -63,12 +63,6 @@ header h1 {
 }
 
 
-
-.backgrounddefault {
-    background-size: cover;
-    background-position: center;
-}
-
 #backgroundpicture1 {
     font-family: 'Alfa Slab One', cursive;
     background-image: url(images/guitar.png);
@@ -78,6 +72,8 @@ header h1 {
     display: flex;
     align-items: end;
     font-size: 0.9em;
+    background-size: cover;
+    background-position: center;
 }
 
 #backgroundpicture1 p {
@@ -102,10 +98,22 @@ header h1 {
     display: none;
 }
 
+.init-hidden {
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+.init-hidden-off {
+    opacity: 1;
+}
+
 #articlecall {
    padding-top: 45px;
     background-color: rgb(0, 0, 0);
+    transition: .5s;
 }
+
+
 
 #articlecall a {
     text-decoration: none;
@@ -123,6 +131,7 @@ header h1 {
     text-align: center;
     font-size: 1.2em;
     padding: 15px 0px 0px 0px;
+    
 }
 
 #articlecall p {
@@ -139,6 +148,8 @@ header h1 {
     display: flex;
     align-items: end;
     justify-content: center;
+    background-size: cover;
+    background-position: center;
 }
 
 #shoplink {
@@ -158,6 +169,8 @@ header h1 {
     display: flex;
     align-items: end;
     justify-content: right;
+    background-size: cover;
+    background-position: center;
 }
 
 #signatureguitars p {
@@ -174,6 +187,8 @@ header h1 {
     display: flex;
     align-items: end;
     justify-content: right;
+    background-size: cover;
+    background-position: center;
 }
 
 #t-shirts p {
@@ -190,6 +205,8 @@ header h1 {
     display: flex;
     align-items: end;
     justify-content: right;
+    background-size: cover;
+    background-position: center;
 }
 
 #pedal p {
@@ -214,6 +231,8 @@ header h1 {
     flex-direction: column;
     justify-content: end;
     align-items: end;
+    background-size: cover;
+    background-position: center;
 }
 
 #festival h3 {
@@ -237,6 +256,8 @@ header h1 {
     flex-direction: column;
     justify-content: end;
     align-items: end;
+    background-size: cover;
+    background-position: center;
 }
 
 #children h3 {
@@ -260,6 +281,8 @@ header h1 {
     flex-direction: column;
     justify-content: end;
     align-items: end;
+    background-size: cover;
+    background-position: center;
 }
 
 #solo h3 {
