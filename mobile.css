@@ -347,8 +347,9 @@ header h1 {
 */
 
 #mainelectric h2 {
-    margin-top: 70px;
-    margin-bottom: 50px;
+    margin: 70px 0px 50px 30px;
+    letter-spacing: 6px;
+    font-family: 'Alfa Slab One', cursive;
 }
 
 #electricinst {
@@ -367,7 +368,7 @@ header h1 {
     background-color: black;
     border: 1px solid rgb(6, 6, 6);
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: end;
     background-size: cover;
     background-position: center;
