@@ -11,21 +11,17 @@ body {
 
 header {
     width: 100%;
-    height: 60px;
+    height: 90px;
     background-color: rgb(0, 0, 0);
     position: fixed;
     top: 0;
     z-index: 80;
 }
 
-header h1 {
-    margin: 0px;
-    
-}
 
 .backgroundheader {
     background-image: url(images/Brand.png);
-    background-size: calc(150px);
+    background-size: calc(200px);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -38,51 +34,62 @@ header h1 {
     background-color: transparent;
     border: none;
     color: white;
-    font-size: 2em;
+    font-size: 3em;
     z-index: 85;
     cursor: pointer;
+    display: none;
 }
 
 #menu {
     background-color: white;
-    width: 80%;
-    height: 0px;
+    width: 100%;
+    height: 90px;
     position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.432);
+    z-index: 70;
 
-    visibility: hidden;
-    overflow-y: hidden;
-    transition: 0.6s;
+
+    visibility: visible;
+    overflow-y: visible;
+    transition: none;
 }
 
 #menu.active {
     visibility: visible;
-    height: 800px;
+    height: 1000px;
     padding-top: 30px;
 }
 
 #menu a {
-    display: block;
-    margin: 25px 20px;
-    font-size: 1.1em;
+    display: inline;
+    margin: 55px 0px 5px 0px;
+    padding: 10px;
+    font-size: 0.8em;
     font-weight: bold;
     text-decoration: none;
     color: black;
+    background-color: rgb(254, 255, 255);
+    border-radius: 2px;
 }
 
 #menu a:hover {
-    text-decoration: underline;
+    background-color: lightgrey;
 }
 
 
 #backgroundpicture1 {
     font-family: 'Alfa Slab One', cursive;
-    background-image: url(images/guitar.png);
+    background-image: url(images/backgrounddesktop1.png);
     margin-top: 40px;
     padding-bottom: 40px;
-    height: 500px;
+    height: 600px;
     display: flex;
+    justify-content: end;
     align-items: end;
-    font-size: 0.9em;
+    font-size: 1em;
     background-size: cover;
     background-position: top;
 }
@@ -92,16 +99,24 @@ header h1 {
     color: white;
     font-size: 2em;
     margin: 0px 0px 20px 20px;
-    width: 300px;
+    width: 400px;
 }
 
 #instrumentspictures {
-    height: 175px;
-    margin-left: 15px;
+    height: 225px;
+    margin-left: 0px;
     background-color: white;
     overflow-x: auto;
     display: flex;
     scroll-behavior: smooth;
+}
+
+#instrumentspictures img {
+    padding: 10px;
+}
+
+#instrumentspictures img:hover {
+    transform: scale(1.1);
 }
 
 
@@ -109,9 +124,23 @@ header h1 {
     display: none;
 }
 
+body::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: 3px solid rgb(69, 66, 66);
+  }
+
 
 #articlecall {
-   padding-top: 45px;
+    padding-top: 35px;
     background-color: rgb(0, 0, 0);
     transition: .5s;
 }
@@ -121,17 +150,18 @@ header h1 {
     text-decoration: none;
     color: white;
     background-color: black;
-    padding: 15px;
+    padding: 25px;
+    margin-right: 15px;
     width: 100%;
     text-align: right;
     font-family: 'Alfa Slab One', cursive;
-    font-size: 0.8em;
+    font-size: 1.1em;
 }
 
 #articlecall h2 {
     color: white;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.8em;
     padding: 15px 0px 0px 0px;
     
 }
@@ -139,13 +169,13 @@ header h1 {
 #articlecall p {
     color: white;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.2em;
     padding: 15px;
 }
 
 #backgroundpicture2 {
-    background-image: url(images/womanguitar.png);
-    height: 300px;
+    background-image: url(images/backgrounddesktop2.png);
+    height: 550px;
     margin: 0px;
     display: flex;
     align-items: end;
@@ -157,15 +187,25 @@ header h1 {
 
 #shoplink {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 1150px;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 350px;
+    padding-top: 30px;
 }
 
+.border {
+    height: 290px;
+    width: 290px;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+
+
 #signatureguitars {
-    height: 350px;
+    height: 300px;
+    width: 300px;
     background-image: url(images/guitars.png);
-    margin: 10px;
+    margin: 5px;
     color: white;
     font-family: 'Alfa Slab One', cursive;
     font-size: 1.5em;
@@ -174,34 +214,23 @@ header h1 {
     justify-content: right;
     background-size: cover;
     background-position: center;
+    transition: 0.5s;
 }
 
 #signatureguitars p {
-    margin: 0px 20px 20px 0px;
+    margin: 0px 60px 20px 0px;
 }
 
-#t-shirts {
-    height: 350px;
-    background-image: url(images/tshirts.png);
-    margin: 10px;
-    color: white;
-    font-family: 'Alfa Slab One', cursive;
-    font-size: 1.5em;
-    display: flex;
-    align-items: end;
-    justify-content: right;
-    background-size: cover;
-    background-position: center;
+#signatureguitars:hover {
+    transform: scale(1.1);
 }
 
-#t-shirts p {
-    margin: 0px 20px 20px 0px;
-}
 
 #pedal {
-    height: 350px;
+    height: 300px;
+    width: 300px;
     background-image: url(images/pedal.png);
-    margin: 10px;
+    margin: 5px;
     color: white;
     font-family: 'Alfa Slab One', cursive;
     font-size: 1.5em;
@@ -210,22 +239,52 @@ header h1 {
     justify-content: right;
     background-size: cover;
     background-position: center;
+    transition: 0.5s;
 }
 
 #pedal p {
-    margin: 0px 20px 20px 0px;
+    margin: 0px 60px 20px 0px;
+}
+
+#pedal:hover {
+    transform: scale(1.1);
+}
+
+#t-shirts {
+    height: 300px;
+    width: 300px;
+    background-image: url(images/tshirts.png);
+    margin: 5px;
+    color: white;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 1.5em;
+    display: flex;
+    align-items: end;
+    justify-content: right;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+}
+
+#t-shirts p {
+    margin: 0px 60px 20px 0px;
+}
+
+#t-shirts:hover {
+    transform: scale(1.1);
 }
 
 #contentlink {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
-    height: 1100px;
+    height: 350px;
     background-color: black;
 }
 
 #festival {
-    height: 350px;
+    height: 300px;
+    width: 300px;
     background-image: url(images/festival.png);
     margin: 10px;
     color: rgb(0, 0, 0);
@@ -239,18 +298,19 @@ header h1 {
 }
 
 #festival h3 {
-    font-size: 1.1em;
-    margin: 0px 15px 5px 0px;
+    font-size: 1em;
+    margin: 0px 15px 0px 0px;
 }
 
 #festival p {
-    font-size: 0.8em;
-    margin: 0px 20px 20px 0px;
+    font-size: 0.7em;
+    margin-right: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #children {
-    height: 350px;
+    height: 300px;
+    width: 300px;
     background-image: url(images/children.png);
     margin: 10px;
     color: rgb(0, 0, 0);
@@ -264,18 +324,19 @@ header h1 {
 }
 
 #children h3 {
-    font-size: 1.1em;
+    font-size: 1em;
     margin: 0px 15px 5px 0px;
 }
 
 #children p {
-    font-size: 0.8em;
-    margin: 0px 20px 20px 0px;
+    font-size: 0.7em;
+    margin-right: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #solo {
-    height: 350px;
+    height: 300px;
+    width: 300px;
     background-image: url(images/solo.png);
     margin: 10px;
     color: rgb(1, 1, 1);
@@ -289,13 +350,13 @@ header h1 {
 }
 
 #solo h3 {
-    font-size: 1.1em;
+    font-size: 1em;
     margin: 0px 15px 5px 0px;
 }
 
 #solo p {
-    font-size: 0.8em;
-    margin: 0px 20px 20px 0px;
+    font-size: 0.7em;
+    margin-right: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -316,17 +377,21 @@ header h1 {
 */
 
 #JCarticle p {
-    padding: 15px;
+    padding: 25px;
     text-align: justify;
     text-indent: 30px;
+    line-height: 2em;
+    width: 600px;
+    margin: auto;
 }
 
 #backgroundarticle {
-    background-image: url(images/Jcharllote.png);
-    margin-top: 40px;
-    height: 500px;
+    background-image: url(images/backgrounddesktop2.png);
+    margin-top: 60px;
+    height: 650px;
     display: flex;
     align-items: end;
+    justify-content: end;
     background-size: cover;
     background-position: top;
 }
@@ -334,8 +399,8 @@ header h1 {
 #backgroundarticle p {
     text-align: left;
     color: white;
-    font-size: 2em;
-    margin: 0px 0px 20px 20px;
+    font-size: 3em;
+    margin: 0px 40px 30px 0px;
 }
 
 #jcshow {
@@ -351,14 +416,15 @@ header h1 {
 
 #mainelectric h2 {
     margin-top: 35px;
-    padding: 50px 0px 50px 30px;
+    padding: 120px 0px 50px 30px;
+    font-size: 2em;
     letter-spacing: 6px;
     font-family: 'Alfa Slab One', cursive;
 }
 
 #electricinst {
-    height: 1260px;
-    width: 300px;
+    height: 1100px;
+    width: 850px;
     margin: auto;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -369,15 +435,17 @@ header h1 {
 }
 
 .electricclass {
-    width: 130px;
-    height: 300px;
+    width: 200px;
+    height: 500px;
     background-color: black;
     border: 1px solid rgb(6, 6, 6);
     display: flex;
     justify-content: left;
     align-items: end;
+    margin: 5px;
     background-size: cover;
     background-position: center;
+    transition: 0.6s;
 }
 
 .electricclass p  {
@@ -386,6 +454,17 @@ header h1 {
     margin: 0px;
     padding: 5px;
     font-size: 0.7em;
+}
+
+.borderinst {
+    height: 510px;
+    width: 210px;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+
+.electricclass:hover {
+    transform: scale(1.1);
 }
 
 #electric1 {
@@ -427,14 +506,15 @@ header h1 {
 
  #mainacoustic h2 {
     margin-top: 35px;
-    padding: 50px 0px 50px 30px;
+    padding: 120px 0px 50px 30px;
+    font-size: 2em;
     letter-spacing: 6px;
     font-family: 'Alfa Slab One', cursive;
 }
 
 #acousticinst {
-    height: 1260px;
-    width: 300px;
+    height: 1100px;
+    width: 850px;
     margin: auto;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -445,15 +525,17 @@ header h1 {
 }
 
 .acousticclass {
-    width: 130px;
-    height: 300px;
+    width: 200px;
+    height: 500px;
     background-color: black;
     border: 1px solid rgb(6, 6, 6);
     display: flex;
     justify-content: left;
     align-items: end;
+    margin: 5px;
     background-size: cover;
     background-position: center;
+    transition: 0.6s;
 }
 
 .acousticclass p  {
@@ -462,6 +544,10 @@ header h1 {
     margin: 0px;
     padding: 5px;
     font-size: 0.7em;
+}
+
+.acousticclass:hover {
+    transform: scale(1.1);
 }
 
 #acoustic1 {
@@ -503,13 +589,14 @@ header h1 {
 
  #maindrumm h2 {
     margin-top: 35px;
-    padding: 50px 0px 50px 30px;
+    padding: 120px 0px 50px 30px;
+    font-size: 2em;
     letter-spacing: 6px;
     font-family: 'Alfa Slab One', cursive;
 }
 
 #drumminst {
-    height: 1600px;
+    height: 900px;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
@@ -518,9 +605,17 @@ header h1 {
     padding: 15px;
 }
 
+.borderdrumm {
+    height: 402px;
+    width: 404px;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+
 .drummclass {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
+    margin: 0px;
     background-color: black;
     border: 1px solid rgb(6, 6, 6);
     display: flex;
@@ -528,6 +623,7 @@ header h1 {
     align-items: end;
     background-size: cover;
     background-position: center;
+    transition: 0.6s;
 }
 
 .drummclass p  {
@@ -537,6 +633,10 @@ header h1 {
     padding: 15px;
     font-size: 0.7em;
     width: 100%;
+}
+
+.drummclass:hover {
+    transform: scale(1.1);
 }
 
 #drumm1 {
